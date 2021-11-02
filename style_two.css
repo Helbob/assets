@@ -1,0 +1,286 @@
+img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+body {
+  background-color: rgb(161, 161, 161);
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#first .first {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.one {
+  display: grid;
+  grid-column: 1 / 1;
+}
+
+.two {
+  display: grid;
+  grid-column: 2 / 2;
+}
+
+.three {
+  padding-top: 20px;
+  display: grid;
+  grid-column: 4 / 4;
+  grid-row: 1/1;
+}
+
+.four {
+  padding-top: 20px;
+  display: grid;
+  grid-column: 3 / 3;
+  grid-row: 1/1;
+}
+h1,
+h2,
+h3 {
+  font-family: "sprite_graffitiregular";
+}
+
+li {
+  font-family: "sprite_graffitiregular";
+  font-size: 40px;
+}
+h1 {
+  font-size: 40px;
+  color: rgb(29, 29, 27);
+}
+
+h2,
+h3 {
+  font-size: 30px;
+  color: rgb(29, 29, 27);
+}
+
+#fourth .fourth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.left {
+  display: grid;
+  grid-column: 1 / 2;
+}
+
+.right {
+  display: grid;
+  grid-column: 2 / 2;
+  padding-left: 100px;
+  width: 50%;
+}
+
+#fifth .fifth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 40px;
+}
+
+.point {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-left: 20px;
+}
+.tid {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.liv {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(29, 29, 27);
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(playground.svg);
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/*
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(svg/forgrund.svg), url(svg/mellemgrund.svg);
+}
+*/
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#evilcat_container {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  aspect-ratio: 200/500;
+  left: 21%;
+  top: 50%;
+}
+
+#evilcat_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(evilcat.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+#evilwhitecat_container {
+  width: 70%;
+  position: absolute;
+  aspect-ratio: 4/5;
+  height: 50%;
+  left: 50%;
+  top: 40%;
+}
+
+#evilwhitecat_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(evilwhitecat.svg);
+  background-repeat: no-repeat;
+  background-size: 15%;
+}
+
+#cutecat_container {
+  width: 10%;
+  position: absolute;
+  aspect-ratio: 7/8;
+  height: 50%;
+  top: 25%;
+  left: 80%;
+}
+
+#cutecat_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(cutecat.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#cuteblackcat_container {
+  width: 10%;
+  position: absolute;
+  aspect-ratio: 7/8;
+  height: 50%;
+  top: 70%;
+  left: 60%;
+}
+
+#cuteblackcat_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(cuteblackcat.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#time_board {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 326.8719/33;
+  background-image: url(tid_2.svg);
+  background-size: cover;
+  left: 1%;
+  top: 7%;
+}
+#score_board {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 146/70;
+  background-image: url(point_2.svg);
+  background-size: cover;
+  top: 10%;
+  left: 1%;
+}
+
+#energy_board {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 341/97;
+  background-image: url(liv.svg);
+  background-size: cover;
+  top: 1%;
+  left: 1%;
+}
